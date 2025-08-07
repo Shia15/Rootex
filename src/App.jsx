@@ -1,22 +1,23 @@
+
 import React from "react";
 import Header from "./components/Header.jsx";
+import OrbHero from "./components/OrbHero.jsx";
 import Modules from "./components/Modules.jsx";
-import SystemFeed from "./components/SystemFeed.jsx";
-import Orb from "./components/Orb.jsx";
+import SystemStatus from "./components/SystemStatus.jsx";
 import AccessPanel from "./components/AccessPanel.jsx";
 
 export default function App() {
   return (
-    <div className="bg-black text-white min-h-screen p-6 max-w-7xl mx-auto font-sans">
+    <div className="bg-gradient-to-b from-[#0f0c29] via-[#302b63] to-[#24243e] text-white font-sans min-h-screen overflow-x-hidden">
       <Header />
-      <main>
-        <h2 className="text-5xl font-bold leading-tight mb-6" data-aos="fade-up">Root. Build. <br />Transcend.</h2>
-        <p className="text-lg mb-12 text-gray-400" data-aos="fade-up" data-aos-delay="100">Symbolic logic meets modern infrastructure.</p>
+      <main className="px-4 md:px-16 lg:px-32">
+        <OrbHero />
         <Modules />
-        <SystemFeed />
-        <Orb />
+        <SystemStatus />
         <AccessPanel />
-        <footer className="text-xs text-gray-600 mt-16">© 2025 Rootex Systems. All rights reserved.</footer>
+        <footer className="text-center text-xs text-gray-500 mt-16 mb-4">
+          © 2025 Rootex Systems. Powered by symbolic infrastructure.
+        </footer>
       </main>
     </div>
   );
