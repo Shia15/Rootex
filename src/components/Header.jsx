@@ -1,5 +1,4 @@
 import React from 'react';
-
 export default function Header() {
   return (
     <header className="flex justify-between items-center p-6 border-b border-white/10 backdrop-blur-lg bg-white/5 sticky top-0 z-50">
