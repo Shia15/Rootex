@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.orb-animation {
+  background: radial-gradient(circle at 50% 50%, #3b82f6 0%, #9333ea 100%);
+  animation: pulseOrb 6s infinite ease-in-out;
+}
+@keyframes pulseOrb {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.1); opacity: 1; }
+}
