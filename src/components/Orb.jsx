@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Orb() {
   return (
     <section className="mb-12 text-center" data-aos="zoom-in">

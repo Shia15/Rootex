@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function SystemFeed() {
   return (
     <section className="mb-12" data-aos="fade-up">
